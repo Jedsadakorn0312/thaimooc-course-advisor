@@ -1,0 +1,1 @@
+"""Thai MOOC course advisor."""

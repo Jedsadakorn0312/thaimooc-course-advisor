@@ -1,0 +1,43 @@
+{
+  "records": 120,
+  "unique_ids": 120,
+  "duplicate_ids": 0,
+  "missing": {
+    "category": 0,
+    "institution": 0,
+    "level": 0,
+    "duration_hours": 0,
+    "learning_outcomes": 3,
+    "prerequisites": 0
+  },
+  "categories": {
+    "การศึกษาและการฝึกอบรม": 10,
+    "เกษตรและสิ่งแวดล้อม": 10,
+    "คณิตศาสตร์และวิทยาศาสตร์": 10,
+    "คอมพิวเตอร์และเทคโนโลยี": 10,
+    "ทักษะชีวิตและการพัฒนาตนเอง": 10,
+    "ธุรกิจและการบริหารจัดการ": 10,
+    "ภาษาและการสื่อสาร": 10,
+    "วิศวกรรมและสถาปัตยกรรม": 10,
+    "ศิลปวัฒนธรรมและศาสนา": 10,
+    "สังคมและการเมืองการปกครอง": 10,
+    "สุขภาพและการแพทย์": 10,
+    "อาหารและโภชนาการ": 10
+  },
+  "levels": {
+    "เบื้องต้น": 120
+  },
+  "institutions": 64,
+  "duration_hours": {
+    "min": 1.0,
+    "max": 50.0
+  },
+  "duplicate_titles": {},
+  "missing_learning_outcome_ids": [
+    "SWU00899",
+    "XUETANGX00795",
+    "KUJ00313"
+  ],
+  "missing_source_evidence": 0,
+  "note": "Schema and source-consistency checks, not a semantic relevance benchmark."
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#184f46"><title>Search Lab — เปรียบเทียบวิธีค้นหา | MOOC Compass</title>
+  <link rel="stylesheet" href="/assets/style.css"><link rel="stylesheet" href="/assets/compare.css">
+  <script src="/assets/compare.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#compare-query">ข้ามไปทดลองค้นหา</a>
+<header class="header wrap"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">↗</span><span>MOOC<span class="brand-light"> Compass</span></span></a><div class="header-right"><a href="/research">ผลการทดลอง</a><a href="/">กลับหน้าค้นหา ↗</a></div></header>
+<main class="wrap lab">
+  <section class="lab-intro"><div><p class="eyebrow"><span></span> SAME COURSES. TWO WAYS TO FIND THEM.</p><h1>คำถามเดียวกัน<br><span class="serif-accent">ค้นเจอต่างกันไหม?</span></h1><p class="lab-lead">เปรียบเทียบ TF-IDF กับ Semantic Search บนข้อมูลชุดเดียวกัน<br>ดูว่าการค้นจากคำและการค้นจากความหมายพาไปพบวิชาอะไรบ้าง</p></div><aside class="experiment-note"><span class="step">THE EXPERIMENT</span><p id="dataset-summary">กำลังตรวจชุดข้อมูล…</p><p>ใช้คำถาม ตัวกรอง และจำนวนผลลัพธ์เดียวกัน<br>ทดลองเฉพาะการค้นหา ยังไม่ใช้ LLM เขียนคำตอบ</p><span id="model-state" class="model-state">กำลังตรวจระบบ…</span></aside></section>
+
+  <section class="lab-controls" aria-label="คำถามและเงื่อนไขการทดลอง">
+    <form id="compare-form"><label class="goal-label" for="compare-query">ลองบอกเป้าหมายการเรียนรู้</label><textarea id="compare-query" rows="2" maxlength="2000" required placeholder="เช่น อยากเล่าตัวเลขด้วยภาพให้คนเข้าใจง่าย"></textarea>
+    <div class="lab-filters"><div><label for="compare-category">หมวดวิชา</label><select id="compare-category"><option value="">ทุกหมวด</option></select></div><div><label for="compare-level">ระดับ</label><select id="compare-level"><option value="">ทุกระดับ</option></select></div><div><label for="compare-hours">เวลาต่อวิชา</label><select id="compare-hours"><option value="">ไม่จำกัด</option><option value="3">ไม่เกิน 3 ชั่วโมง</option><option value="5">ไม่เกิน 5 ชั่วโมง</option><option value="10">ไม่เกิน 10 ชั่วโมง</option><option value="20">ไม่เกิน 20 ชั่วโมง</option></select></div><div><label for="compare-k">จำนวนต่อฝั่ง</label><select id="compare-k"><option value="3">Top 3</option><option value="5" selected>Top 5</option><option value="10">Top 10</option></select></div><button id="compare-submit" type="submit" disabled>เปรียบเทียบผล <span aria-hidden="true">↗</span></button></div>
+    </form>
+    <div class="lab-examples"><span>ลองคำถาม</span><button type="button" data-example="อยากเรียนการออกแบบ Data Visualization">ตรงคำ</button><button type="button" data-example="อยากเล่าตัวเลขด้วยภาพให้คนเข้าใจง่าย">บอกด้วยความหมาย</button><button type="button" data-example="I want to learn how to protect my personal data online">ถามเป็นภาษาอังกฤษ</button></div>
+  </section>
+
+  <div class="comparison-warning"><span aria-hidden="true">i</span><p>นี่คือการทดลองจัดอันดับ Top K โดยไม่ตัดคะแนนต่ำ ผลลัพธ์จึงอาจไม่เกี่ยวข้องกับเป้าหมาย คะแนนของสองวิธีเทียบกันตรง ๆ ไม่ได้ และเวลาที่เร็วกว่าไม่ได้แปลว่าค้นหาได้ดีกว่า</p></div>
+  <p id="compare-status" role="status" aria-live="polite"></p><div id="compare-error" class="error" role="alert" hidden></div>
+
+  <section id="comparison-results" hidden aria-labelledby="comparison-title">
+    <div class="comparison-heading"><div><p class="eyebrow">SIDE BY SIDE</p><h2 id="comparison-title" tabindex="-1">ผลค้นหาจากเป้าหมายของคุณ</h2><p id="active-query"></p></div><button id="download-comparison" type="button">บันทึกผล JSON ↓</button></div>
+    <div class="experiment-summary"><span id="matched-courses"></span><span id="overlap"></span><span id="corpus-id"></span></div>
+    <div class="comparison-columns">
+      <section class="method-column" aria-labelledby="tfidf-heading"><div class="method-header"><div><span class="method-label">BASELINE · LEXICAL</span><h3 id="tfidf-heading">TF-IDF</h3><p>ค้นจากรูปแบบตัวอักษรและคำที่ปรากฏ</p></div><span id="tfidf-time" class="time-badge"></span></div><div id="tfidf-results" class="ranked-list"></div></section>
+      <section class="method-column semantic-column" aria-labelledby="semantic-heading"><div class="method-header"><div><span class="method-label">EMBEDDINGS · MULTILINGUAL E5 SMALL</span><h3 id="semantic-heading">Semantic Search</h3><p>ค้นจากเวกเตอร์ที่แทนความหมายของข้อความ</p></div><span id="semantic-time" class="time-badge"></span></div><div id="semantic-results" class="ranked-list"></div></section>
+    </div>
+    <div id="comparison-empty" class="empty" hidden><h3>ไม่มีวิชาที่ผ่านตัวกรองนี้</h3><p>ทั้งสองวิธีจึงไม่มีรายการให้จัดอันดับ ลองขยายเวลาหรือเปลี่ยนหมวดวิชา</p></div>
+    <p class="timing-note">เวลาเป็นการวัดคำค้นรอบนี้ รวมการแปลงคำค้น กรอง และจัดอันดับ ไม่รวมโหลดโมเดล สร้างดัชนี หรือรับส่งข้อมูลผ่านเว็บ การตัดสินคุณภาพต้องใช้คะแนนความเกี่ยวข้องที่คนตรวจแยกต่างหาก</p>
+  </section>
+
+  <section class="lab-explanation"><div><span>01 / SAME INPUT</span><h3>เปรียบเทียบบนข้อมูลเดียวกัน</h3><p>ทั้งสองวิธีอ่านชื่อ คำอธิบาย และผลลัพธ์การเรียนรู้ชุดเดียวกัน ตรวจ fingerprint ของข้อมูลทุกครั้ง</p></div><div><span>02 / DIFFERENT REPRESENTATION</span><h3>ต่างที่วิธีแทนข้อความ</h3><p>TF-IDF ใช้ character n-grams ส่วน E5 ใช้ embeddings เอกสารยาวแบ่งเป็นช่วงข้อความแล้วเลือกคะแนนช่วงที่สูงที่สุดต่อวิชา</p></div><div><span>03 / NO WINNER YET</span><h3>ดูอันดับก่อนตัดสิน</h3><p>ผลซ้ำกันมากไม่ได้รับรองว่าถูก และคะแนนสูงไม่ได้เป็นโอกาสที่จะตอบถูก ต้องประเมินกับคำถามที่มีคนตรวจ</p></div></section>
+</main>
+<footer class="footer wrap"><a class="brand footer-brand" href="/"><span class="brand-mark" aria-hidden="true">↗</span>MOOC Compass</a><p>โปรเจกต์ทดลองเพื่อการเรียนรู้ · ไม่ใช่เว็บไซต์ทางการของ Thai MOOC</p><a href="/">ค้นหารายวิชา ↗</a></footer>
+<template id="rank-template"><article class="rank-card"><div class="rank-top"><span class="rank-index"></span><span class="rank-category"></span><span class="shared-tag" hidden>พบทั้งสองวิธี</span></div><h4 class="rank-title"></h4><p class="rank-institution"></p><div class="rank-meta"><span class="rank-duration"></span><span class="rank-level"></span></div><p class="rank-description"></p><div class="rank-bottom"><span class="rank-score"></span><a class="rank-link" target="_blank" rel="noopener noreferrer">ดูวิชา ↗</a></div></article></template>
+</body>
+</html>

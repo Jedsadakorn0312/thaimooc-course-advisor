@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#184f46"><title>ผลการทดลอง — MOOC Compass</title><link rel="stylesheet" href="/assets/style.css"><link rel="stylesheet" href="/assets/research.css"><script src="/assets/research.js" defer></script></head>
+<body>
+<a class="skip-link" href="#findings">ข้ามไปผลการทดลอง</a>
+<header class="header wrap"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">↗</span><span>MOOC<span class="brand-light"> Compass</span></span></a><div class="header-right"><span class="prototype">PROJECT FINDINGS</span><a href="/">ไปหน้าค้นหารายวิชา ↗</a></div></header>
+<main class="wrap research">
+  <section class="research-intro"><p class="eyebrow"><span></span> WHAT WE BUILT. WHAT WE LEARNED.</p><h1>ค้นหาให้ตรงขึ้น<br>เริ่มจาก<span class="serif-accent">วัดผลให้ชัด</span><span class="orange-dot">.</span></h1><p>บันทึกการเปรียบเทียบ TF-IDF และ Semantic Search<br>ประกอบการพัฒนาระบบค้นหารายวิชาตามเป้าหมายการเรียนรู้</p><div class="research-actions"><a class="primary-link" href="/">ใช้งานค้นหารายวิชา ↗</a><a class="secondary-link" href="/compare">เปิดห้องทดลองเปรียบเทียบ ↗</a></div></section>
+
+  <section class="takeaway" id="findings"><span class="step">CURRENT TAKEAWAY</span><h2>เริ่มใช้งานด้วย TF-IDF สำหรับภาษาไทย<br>แล้วประเมินต่อก่อนตัดสินผู้ชนะ</h2><p>ผลทดสอบเบื้องต้นสนับสนุน TF-IDF สำหรับคำค้นภาษาไทยในชุดนี้ ส่วน semantic เด่นในคำถามข้ามภาษา แต่รอบประเมินความเกี่ยวข้องโดย AI ยังเล็กและไม่เป็นอิสระ จึงไม่ใช่ข้อสรุปว่าวิธีใดดีที่สุดสำหรับผู้ใช้จริงทั้งหมด</p><p class="scope-note" id="data-scope">กำลังโหลดขอบเขตการทดลอง…</p></section>
+  <div id="research-error" class="error" role="alert" hidden>ยังโหลดตัวเลขผลทดลองไม่ได้ กรุณาลองโหลดหน้าใหม่ รายงานดาวน์โหลดด้านล่างยังใช้ตรวจสอบได้</div>
+
+  <section class="research-section"><div class="section-title"><span>01 / KNOWN-TARGET RETRIEVAL</span><h2>ค้นเจอวิชาที่ควรเจอไหม?</h2><p>72 คำถามจาก 24 วิชาเป้าหมาย ครบ 12 หมวด วัดว่าวิชาเป้าหมายปรากฏใน Top 5 หรือไม่ ไม่ได้ยืนยันว่าทั้งห้าอันดับเกี่ยวข้อง</p></div>
+    <div class="table-wrap"><table><caption>จำนวนคำถามที่ค้นพบวิชาเป้าหมายใน Top 5</caption><thead><tr><th scope="col">กลุ่มคำถาม</th><th scope="col">TF-IDF</th><th scope="col">Semantic E5</th></tr></thead><tbody id="target-rows"><tr><td colspan="3">กำลังโหลดผล…</td></tr></tbody></table></div>
+    <div class="latency-note" id="latency-note"></div><p class="research-caveat">คำถามเขียนโดยผู้ช่วยจากข้อมูลต้นทาง จึงอาจเอื้อคำที่ตรงกัน บางหัวข้อเคยใช้ในรอบพัฒนา ไม่ใช่ชุดทดสอบที่ปิดบังไว้จากการพัฒนาระบบ</p>
+    <div class="downloads"><a href="/research/download/target-summary">อ่านรายงานและข้อจำกัด ↗</a><a href="/research/download/target-rankings">ดาวน์โหลดผลรายคำถาม CSV ↓</a></div>
+  </section>
+
+  <section class="research-section"><div class="section-title"><span>02 / AI RELEVANCE PILOT</span><h2>แล้วทั้งห้าอันดับเกี่ยวข้องแค่ไหน?</h2><p>รอบนำร่อง 12 คำถามภาษาไทย รวมผลจากสองวิธีเป็น 99 คู่คำถาม–วิชาไม่ซ้ำ ให้คะแนนจากเนื้อหารายวิชาเป็น ตรง / บางส่วน / ไม่ตรง</p></div>
+    <div class="judge-note"><strong>คะแนนร่างโดย Codex assistant ในแชต</strong><p>ไม่ได้เรียก Qwen3 หรือ API ภายนอก และไม่มีคนตรวจ ผู้ช่วยคนเดิมเคยเขียนคำถามและเห็นผลก่อนหน้า ส่วนใหญ่ประเมินจากข้อความคัดย่อและขยายอ่านบางรายการ จึงอาจพลาดเนื้อหาส่วนที่ไม่ได้แสดง</p></div>
+    <div class="table-wrap"><table><caption>ผลประเมินร่างบน 60 ตำแหน่งผลลัพธ์ต่อวิธี</caption><thead><tr><th scope="col">ความเกี่ยวข้อง</th><th scope="col">TF-IDF</th><th scope="col">Semantic E5</th></tr></thead><tbody id="pilot-rows"><tr><td colspan="3">กำลังโหลดผล…</td></tr></tbody></table></div>
+    <p class="research-caveat">ข้อพบหลักคือ การบังคับแสดงให้ครบ 5 วิชาทำให้มีรายการไม่เกี่ยวข้องตามมา แม้ค้นพบวิชาที่ตรงไว้ต้นรายการ หน้าค้นหาสำหรับผู้ใช้จึงคืนได้ไม่เกิน 5 วิชา และอาจน้อยกว่านั้นเมื่อไม่ผ่านเกณฑ์ค้นหา ทั้งนี้เกณฑ์ดังกล่าวยังไม่รับรองว่าทุกรายการตรงเป้าหมาย</p>
+    <div class="downloads"><a href="/research/download/pilot-summary">อ่านสรุปการประเมิน ↗</a><a href="/research/download/pilot-judgments">คะแนน เหตุผล และหลักฐาน CSV ↓</a><a href="/research/download/pilot-details">ข้อมูลผลประเมิน JSON ↓</a></div>
+  </section>
+
+  <section class="next-step"><span class="step">NEXT QUESTIONS</span><h2>สิ่งที่ยังต้องพิสูจน์</h2><p>เพิ่มคำถามจากผู้ใช้จริง ตรวจคะแนนบางส่วนโดยผู้ตรวจอิสระ และประเมินการคืนผลเมื่อไม่มีวิชาที่ตรง ก่อนสรุปคุณภาพสำหรับการใช้งานในวงกว้าง</p><a class="primary-link" href="/">กลับไปค้นหาวิชาที่อยากเรียน ↗</a></section>
+</main>
+<footer class="footer wrap"><a class="brand footer-brand" href="/"><span class="brand-mark" aria-hidden="true">↗</span>MOOC Compass</a><p>โปรเจกต์ทดลองเพื่อการเรียนรู้ · ไม่ใช่เว็บไซต์ทางการของ Thai MOOC</p><a href="/compare">Search Lab ↗</a></footer>
+</body></html>

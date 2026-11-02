@@ -1,0 +1,655 @@
+{
+  "label_type": "assistant-authored evidence-linked known target; not human-validated exhaustive relevance",
+  "created_before_execution": "2026-11-02T09:14:00.696330+00:00",
+  "corpus_fingerprint": "99b0231a0b4b20132cd962cc929711f7a36cff9a85b5d11df29b00b363560c33",
+  "cases": [
+    {
+      "case_id": "PDPC00984-direct_title",
+      "target_id": "PDPC00984",
+      "category": "การศึกษาและการฝึกอบรม",
+      "kind": "direct_title",
+      "query": "อยากเรียน หลักสูตรด้านการคุ้มครองข้อมูลส่วนบุคคล สำหรับประชาชนทั่วไป",
+      "evidence": "สิทธิของเจ้าของข้อมูล",
+      "source_url": "https://thaimooc.ac.th/courses/PDPC00984"
+    },
+    {
+      "case_id": "PDPC00984-thai_goal",
+      "target_id": "PDPC00984",
+      "category": "การศึกษาและการฝึกอบรม",
+      "kind": "thai_goal",
+      "query": "อยากรู้สิทธิของฉันเมื่อบริษัทเก็บข้อมูลส่วนตัวและวิธีรับมือเมื่อข้อมูลรั่ว",
+      "evidence": "สิทธิของเจ้าของข้อมูล",
+      "source_url": "https://thaimooc.ac.th/courses/PDPC00984"
+    },
+    {
+      "case_id": "PDPC00984-english_goal",
+      "target_id": "PDPC00984",
+      "category": "การศึกษาและการฝึกอบรม",
+      "kind": "english_goal",
+      "query": "I want to understand my rights over personal information and respond to a data breach",
+      "evidence": "สิทธิของเจ้าของข้อมูล",
+      "source_url": "https://thaimooc.ac.th/courses/PDPC00984"
+    },
+    {
+      "case_id": "CMU00088-direct_title",
+      "target_id": "CMU00088",
+      "category": "การศึกษาและการฝึกอบรม",
+      "kind": "direct_title",
+      "query": "อยากเรียน การสอนแบบ Active Learning ในห้องเรียน ที่สนุกและใช้งานได้ทันที",
+      "evidence": "กระตือรือร้น",
+      "source_url": "https://thaimooc.ac.th/courses/CMU00088"
+    },
+    {
+      "case_id": "CMU00088-thai_goal",
+      "target_id": "CMU00088",
+      "category": "การศึกษาและการฝึกอบรม",
+      "kind": "thai_goal",
+      "query": "อยากให้นักเรียนมีส่วนร่วมในชั้นและกล้าถามตอบมากกว่านั่งฟังครูอย่างเดียว",
+      "evidence": "กระตือรือร้น",
+      "source_url": "https://thaimooc.ac.th/courses/CMU00088"
+    },
+    {
+      "case_id": "CMU00088-english_goal",
+      "target_id": "CMU00088",
+      "category": "การศึกษาและการฝึกอบรม",
+      "kind": "english_goal",
+      "query": "I want students to participate actively and ask questions instead of only listening to lectures",
+      "evidence": "กระตือรือร้น",
+      "source_url": "https://thaimooc.ac.th/courses/CMU00088"
+    },
+    {
+      "case_id": "KMUTT00291-direct_title",
+      "target_id": "KMUTT00291",
+      "category": "คณิตศาสตร์และวิทยาศาสตร์",
+      "kind": "direct_title",
+      "query": "อยากเรียน ไพธอนพื้นฐานสำหรับผู้เริ่มต้น",
+      "evidence": "Pandas",
+      "source_url": "https://thaimooc.ac.th/courses/KMUTT00291"
+    },
+    {
+      "case_id": "KMUTT00291-thai_goal",
+      "target_id": "KMUTT00291",
+      "category": "คณิตศาสตร์และวิทยาศาสตร์",
+      "kind": "thai_goal",
+      "query": "ไม่เคยเขียนโค้ด อยากเริ่มไพธอนและลองใช้ Pandas จัดข้อมูลกับวาดกราฟ",
+      "evidence": "Pandas",
+      "source_url": "https://thaimooc.ac.th/courses/KMUTT00291"
+    },
+    {
+      "case_id": "KMUTT00291-english_goal",
+      "target_id": "KMUTT00291",
+      "category": "คณิตศาสตร์และวิทยาศาสตร์",
+      "kind": "english_goal",
+      "query": "I am new to programming and want to learn Python with pandas and simple plots",
+      "evidence": "Pandas",
+      "source_url": "https://thaimooc.ac.th/courses/KMUTT00291"
+    },
+    {
+      "case_id": "CU00148-direct_title",
+      "target_id": "CU00148",
+      "category": "คณิตศาสตร์และวิทยาศาสตร์",
+      "kind": "direct_title",
+      "query": "อยากเรียน การผลิตเชื้อเพลิงเหลวจากขยะพลาสติก",
+      "evidence": "ขยะพลาสติก",
+      "source_url": "https://thaimooc.ac.th/courses/CU00148"
+    },
+    {
+      "case_id": "CU00148-thai_goal",
+      "target_id": "CU00148",
+      "category": "คณิตศาสตร์และวิทยาศาสตร์",
+      "kind": "thai_goal",
+      "query": "อยากรู้วิธีเปลี่ยนขยะพลาสติกให้กลายเป็นน้ำมันเชื้อเพลิง",
+      "evidence": "ขยะพลาสติก",
+      "source_url": "https://thaimooc.ac.th/courses/CU00148"
+    },
+    {
+      "case_id": "CU00148-english_goal",
+      "target_id": "CU00148",
+      "category": "คณิตศาสตร์และวิทยาศาสตร์",
+      "kind": "english_goal",
+      "query": "I want to turn discarded plastic into liquid fuel",
+      "evidence": "ขยะพลาสติก",
+      "source_url": "https://thaimooc.ac.th/courses/CU00148"
+    },
+    {
+      "case_id": "CRRU00120-direct_title",
+      "target_id": "CRRU00120",
+      "category": "คอมพิวเตอร์และเทคโนโลยี",
+      "kind": "direct_title",
+      "query": "อยากเรียน ตกแต่งและสร้างภาพอย่างสร้างสรรค์ด้วยโปรแกรม GIMP",
+      "evidence": "การปรับแต่งภาพ",
+      "source_url": "https://thaimooc.ac.th/courses/CRRU00120"
+    },
+    {
+      "case_id": "CRRU00120-thai_goal",
+      "target_id": "CRRU00120",
+      "category": "คอมพิวเตอร์และเทคโนโลยี",
+      "kind": "thai_goal",
+      "query": "อยากปรับแต่งรูปและจัดวางองค์ประกอบภาพดิจิทัลด้วยโปรแกรมแต่งภาพ",
+      "evidence": "การปรับแต่งภาพ",
+      "source_url": "https://thaimooc.ac.th/courses/CRRU00120"
+    },
+    {
+      "case_id": "CRRU00120-english_goal",
+      "target_id": "CRRU00120",
+      "category": "คอมพิวเตอร์และเทคโนโลยี",
+      "kind": "english_goal",
+      "query": "I want to edit digital pictures and arrange visual elements with an image editor",
+      "evidence": "การปรับแต่งภาพ",
+      "source_url": "https://thaimooc.ac.th/courses/CRRU00120"
+    },
+    {
+      "case_id": "CMU00099-direct_title",
+      "target_id": "CMU00099",
+      "category": "คอมพิวเตอร์และเทคโนโลยี",
+      "kind": "direct_title",
+      "query": "อยากเรียน คลังข้อมูล",
+      "evidence": "ไดเมนชัน",
+      "source_url": "https://thaimooc.ac.th/courses/CMU00099"
+    },
+    {
+      "case_id": "CMU00099-thai_goal",
+      "target_id": "CMU00099",
+      "category": "คอมพิวเตอร์และเทคโนโลยี",
+      "kind": "thai_goal",
+      "query": "อยากออกแบบโครงสร้างข้อมูลแบบมิติและโหลดข้อมูลเพื่อวิเคราะห์ด้วย OLAP",
+      "evidence": "ไดเมนชัน",
+      "source_url": "https://thaimooc.ac.th/courses/CMU00099"
+    },
+    {
+      "case_id": "CMU00099-english_goal",
+      "target_id": "CMU00099",
+      "category": "คอมพิวเตอร์และเทคโนโลยี",
+      "kind": "english_goal",
+      "query": "I want to design dimensional data models and load data for OLAP analysis",
+      "evidence": "ไดเมนชัน",
+      "source_url": "https://thaimooc.ac.th/courses/CMU00099"
+    },
+    {
+      "case_id": "BUU00061-direct_title",
+      "target_id": "BUU00061",
+      "category": "ทักษะชีวิตและการพัฒนาตนเอง",
+      "kind": "direct_title",
+      "query": "อยากเรียน การคิดเชิงระบบ",
+      "evidence": "การคิดเชิงระบบ",
+      "source_url": "https://thaimooc.ac.th/courses/BUU00061"
+    },
+    {
+      "case_id": "BUU00061-thai_goal",
+      "target_id": "BUU00061",
+      "category": "ทักษะชีวิตและการพัฒนาตนเอง",
+      "kind": "thai_goal",
+      "query": "อยากมองปัญหาในองค์กรให้เห็นความเชื่อมโยงของหลายส่วนก่อนลงมือแก้",
+      "evidence": "การคิดเชิงระบบ",
+      "source_url": "https://thaimooc.ac.th/courses/BUU00061"
+    },
+    {
+      "case_id": "BUU00061-english_goal",
+      "target_id": "BUU00061",
+      "category": "ทักษะชีวิตและการพัฒนาตนเอง",
+      "kind": "english_goal",
+      "query": "I want to understand interconnected organizational problems using systems thinking",
+      "evidence": "การคิดเชิงระบบ",
+      "source_url": "https://thaimooc.ac.th/courses/BUU00061"
+    },
+    {
+      "case_id": "NU00418-direct_title",
+      "target_id": "NU00418",
+      "category": "ทักษะชีวิตและการพัฒนาตนเอง",
+      "kind": "direct_title",
+      "query": "อยากเรียน การสร้างทีมงานเพื่อการพัฒนางานแบบมืออาชีพ",
+      "evidence": "การสร้างทีมงานที่มีประสิทธิภาพ",
+      "source_url": "https://thaimooc.ac.th/courses/NU00418"
+    },
+    {
+      "case_id": "NU00418-thai_goal",
+      "target_id": "NU00418",
+      "category": "ทักษะชีวิตและการพัฒนาตนเอง",
+      "kind": "thai_goal",
+      "query": "อยากสร้างทีมให้ทำงานร่วมกันได้ดีและเข้าใจปัจจัยที่ทำให้ทีมมีประสิทธิภาพ",
+      "evidence": "การสร้างทีมงานที่มีประสิทธิภาพ",
+      "source_url": "https://thaimooc.ac.th/courses/NU00418"
+    },
+    {
+      "case_id": "NU00418-english_goal",
+      "target_id": "NU00418",
+      "category": "ทักษะชีวิตและการพัฒนาตนเอง",
+      "kind": "english_goal",
+      "query": "I want to build an effective team and understand what makes people work well together",
+      "evidence": "การสร้างทีมงานที่มีประสิทธิภาพ",
+      "source_url": "https://thaimooc.ac.th/courses/NU00418"
+    },
+    {
+      "case_id": "NU00420-direct_title",
+      "target_id": "NU00420",
+      "category": "ธุรกิจและการบริหารจัดการ",
+      "kind": "direct_title",
+      "query": "อยากเรียน การเงินส่วนบุคคล",
+      "evidence": "Excel",
+      "source_url": "https://thaimooc.ac.th/courses/NU00420"
+    },
+    {
+      "case_id": "NU00420-thai_goal",
+      "target_id": "NU00420",
+      "category": "ธุรกิจและการบริหารจัดการ",
+      "kind": "thai_goal",
+      "query": "อยากวางแผนเงินของตัวเองด้วย Excel และทำความเข้าใจการลงทุนเน้นคุณค่า",
+      "evidence": "Excel",
+      "source_url": "https://thaimooc.ac.th/courses/NU00420"
+    },
+    {
+      "case_id": "NU00420-english_goal",
+      "target_id": "NU00420",
+      "category": "ธุรกิจและการบริหารจัดการ",
+      "kind": "english_goal",
+      "query": "I want to plan my personal finances in Excel and understand value investing",
+      "evidence": "Excel",
+      "source_url": "https://thaimooc.ac.th/courses/NU00420"
+    },
+    {
+      "case_id": "DEPA00173-direct_title",
+      "target_id": "DEPA00173",
+      "category": "ธุรกิจและการบริหารจัดการ",
+      "kind": "direct_title",
+      "query": "อยากเรียน สตาร์ทอัพ มุ่งสู่ฝัน",
+      "evidence": "Pitch",
+      "source_url": "https://thaimooc.ac.th/courses/DEPA00173"
+    },
+    {
+      "case_id": "DEPA00173-thai_goal",
+      "target_id": "DEPA00173",
+      "category": "ธุรกิจและการบริหารจัดการ",
+      "kind": "thai_goal",
+      "query": "อยากเริ่มธุรกิจใหม่ หาไอเดียลูกค้าและเตรียมนำเสนอแผนให้ผู้ลงทุน",
+      "evidence": "Pitch",
+      "source_url": "https://thaimooc.ac.th/courses/DEPA00173"
+    },
+    {
+      "case_id": "DEPA00173-english_goal",
+      "target_id": "DEPA00173",
+      "category": "ธุรกิจและการบริหารจัดการ",
+      "kind": "english_goal",
+      "query": "I want to launch a startup, identify customers and pitch my business to investors",
+      "evidence": "Pitch",
+      "source_url": "https://thaimooc.ac.th/courses/DEPA00173"
+    },
+    {
+      "case_id": "NOU00376-direct_title",
+      "target_id": "NOU00376",
+      "category": "ภาษาและการสื่อสาร",
+      "kind": "direct_title",
+      "query": "อยากเรียน พูดภาษาจีน 300 ประโยค",
+      "evidence": "Taiwan",
+      "source_url": "https://thaimooc.ac.th/courses/NOU00376"
+    },
+    {
+      "case_id": "NOU00376-thai_goal",
+      "target_id": "NOU00376",
+      "category": "ภาษาและการสื่อสาร",
+      "kind": "thai_goal",
+      "query": "อยากพูดภาษาจีนใช้ในชีวิตประจำวันเวลาไปไต้หวัน เช่น ร้านอาหารและถามทาง",
+      "evidence": "Taiwan",
+      "source_url": "https://thaimooc.ac.th/courses/NOU00376"
+    },
+    {
+      "case_id": "NOU00376-english_goal",
+      "target_id": "NOU00376",
+      "category": "ภาษาและการสื่อสาร",
+      "kind": "english_goal",
+      "query": "I want everyday Mandarin phrases for ordering food and asking directions in Taiwan",
+      "evidence": "Taiwan",
+      "source_url": "https://thaimooc.ac.th/courses/NOU00376"
+    },
+    {
+      "case_id": "CU00150-direct_title",
+      "target_id": "CU00150",
+      "category": "ภาษาและการสื่อสาร",
+      "kind": "direct_title",
+      "query": "อยากเรียน ง่าย สบาย กับการอธิบายกราฟเป็นภาษาอังกฤษ",
+      "evidence": "แนะนำคำศัพท์ภาษาอังกฤษ",
+      "source_url": "https://thaimooc.ac.th/courses/CU00150"
+    },
+    {
+      "case_id": "CU00150-thai_goal",
+      "target_id": "CU00150",
+      "category": "ภาษาและการสื่อสาร",
+      "kind": "thai_goal",
+      "query": "อยากฝึกเขียนอธิบายตาราง กราฟ และชาร์ตเป็นภาษาอังกฤษ",
+      "evidence": "แนะนำคำศัพท์ภาษาอังกฤษ",
+      "source_url": "https://thaimooc.ac.th/courses/CU00150"
+    },
+    {
+      "case_id": "CU00150-english_goal",
+      "target_id": "CU00150",
+      "category": "ภาษาและการสื่อสาร",
+      "kind": "english_goal",
+      "query": "I want English vocabulary and phrases for describing tables, graphs and charts",
+      "evidence": "แนะนำคำศัพท์ภาษาอังกฤษ",
+      "source_url": "https://thaimooc.ac.th/courses/CU00150"
+    },
+    {
+      "case_id": "ICCS00894-direct_title",
+      "target_id": "ICCS00894",
+      "category": "วิศวกรรมและสถาปัตยกรรม",
+      "kind": "direct_title",
+      "query": "อยากเรียน การฟื้นฟูแบตเตอรี่เก่า",
+      "evidence": "น้ำกรดแบตเตอรี่",
+      "source_url": "https://thaimooc.ac.th/courses/ICCS00894"
+    },
+    {
+      "case_id": "ICCS00894-thai_goal",
+      "target_id": "ICCS00894",
+      "category": "วิศวกรรมและสถาปัตยกรรม",
+      "kind": "thai_goal",
+      "query": "อยากตรวจสภาพแบตเตอรี่เก่า วัดน้ำกรดและเรียนการใช้เครื่องฟื้นฟู",
+      "evidence": "น้ำกรดแบตเตอรี่",
+      "source_url": "https://thaimooc.ac.th/courses/ICCS00894"
+    },
+    {
+      "case_id": "ICCS00894-english_goal",
+      "target_id": "ICCS00894",
+      "category": "วิศวกรรมและสถาปัตยกรรม",
+      "kind": "english_goal",
+      "query": "I want to test old batteries, measure acid concentration and learn battery restoration",
+      "evidence": "น้ำกรดแบตเตอรี่",
+      "source_url": "https://thaimooc.ac.th/courses/ICCS00894"
+    },
+    {
+      "case_id": "NU00448-direct_title",
+      "target_id": "NU00448",
+      "category": "วิศวกรรมและสถาปัตยกรรม",
+      "kind": "direct_title",
+      "query": "อยากเรียน เทคนิคการออกแบบและก่อสร้างอาคารที่เป็นมิตรต่อสิ่งแวดล้อม",
+      "evidence": "เทคนิคการออกแบบทางสถาปัตยกรรม",
+      "source_url": "https://thaimooc.ac.th/courses/NU00448"
+    },
+    {
+      "case_id": "NU00448-thai_goal",
+      "target_id": "NU00448",
+      "category": "วิศวกรรมและสถาปัตยกรรม",
+      "kind": "thai_goal",
+      "query": "อยากออกแบบอาคารและเลือกเทคโนโลยีก่อสร้างที่ลดผลกระทบต่อสิ่งแวดล้อม",
+      "evidence": "เทคนิคการออกแบบทางสถาปัตยกรรม",
+      "source_url": "https://thaimooc.ac.th/courses/NU00448"
+    },
+    {
+      "case_id": "NU00448-english_goal",
+      "target_id": "NU00448",
+      "category": "วิศวกรรมและสถาปัตยกรรม",
+      "kind": "english_goal",
+      "query": "I want to design environmentally friendly buildings and choose green construction technologies",
+      "evidence": "เทคนิคการออกแบบทางสถาปัตยกรรม",
+      "source_url": "https://thaimooc.ac.th/courses/NU00448"
+    },
+    {
+      "case_id": "ICCS00904-direct_title",
+      "target_id": "ICCS00904",
+      "category": "ศิลปวัฒนธรรมและศาสนา",
+      "kind": "direct_title",
+      "query": "อยากเรียน สไบปักมอญสมุทรสาคร",
+      "evidence": "การปักลาย",
+      "source_url": "https://thaimooc.ac.th/courses/ICCS00904"
+    },
+    {
+      "case_id": "ICCS00904-thai_goal",
+      "target_id": "ICCS00904",
+      "category": "ศิลปวัฒนธรรมและศาสนา",
+      "kind": "thai_goal",
+      "query": "อยากเรียนวิธีเขียนลายและปักสไบมอญแบบสมุทรสาคร",
+      "evidence": "การปักลาย",
+      "source_url": "https://thaimooc.ac.th/courses/ICCS00904"
+    },
+    {
+      "case_id": "ICCS00904-english_goal",
+      "target_id": "ICCS00904",
+      "category": "ศิลปวัฒนธรรมและศาสนา",
+      "kind": "english_goal",
+      "query": "I want to design and embroider traditional Mon sabai garments from Samut Sakhon",
+      "evidence": "การปักลาย",
+      "source_url": "https://thaimooc.ac.th/courses/ICCS00904"
+    },
+    {
+      "case_id": "DRU00183-direct_title",
+      "target_id": "DRU00183",
+      "category": "ศิลปวัฒนธรรมและศาสนา",
+      "kind": "direct_title",
+      "query": "อยากเรียน การแสดงและกำกับการแสดง",
+      "evidence": "สีหน้า แววตา",
+      "source_url": "https://thaimooc.ac.th/courses/DRU00183"
+    },
+    {
+      "case_id": "DRU00183-thai_goal",
+      "target_id": "DRU00183",
+      "category": "ศิลปวัฒนธรรมและศาสนา",
+      "kind": "thai_goal",
+      "query": "อยากฝึกถ่ายทอดอารมณ์ผ่านสีหน้าแววตาและร่างกายสำหรับการแสดงหน้ากล้อง",
+      "evidence": "สีหน้า แววตา",
+      "source_url": "https://thaimooc.ac.th/courses/DRU00183"
+    },
+    {
+      "case_id": "DRU00183-english_goal",
+      "target_id": "DRU00183",
+      "category": "ศิลปวัฒนธรรมและศาสนา",
+      "kind": "english_goal",
+      "query": "I want to express emotions through facial expressions and body movement when acting on camera",
+      "evidence": "สีหน้า แววตา",
+      "source_url": "https://thaimooc.ac.th/courses/DRU00183"
+    },
+    {
+      "case_id": "EAU00184-direct_title",
+      "target_id": "EAU00184",
+      "category": "สังคมและการเมืองการปกครอง",
+      "kind": "direct_title",
+      "query": "อยากเรียน อาเซียนศึกษา",
+      "evidence": "การรวมกลุ่มอาเซียน",
+      "source_url": "https://thaimooc.ac.th/courses/EAU00184"
+    },
+    {
+      "case_id": "EAU00184-thai_goal",
+      "target_id": "EAU00184",
+      "category": "สังคมและการเมืองการปกครอง",
+      "kind": "thai_goal",
+      "query": "อยากเข้าใจการรวมกลุ่มของประเทศอาเซียนและความท้าทายของประชาคม",
+      "evidence": "การรวมกลุ่มอาเซียน",
+      "source_url": "https://thaimooc.ac.th/courses/EAU00184"
+    },
+    {
+      "case_id": "EAU00184-english_goal",
+      "target_id": "EAU00184",
+      "category": "สังคมและการเมืองการปกครอง",
+      "kind": "english_goal",
+      "query": "I want to understand ASEAN integration and the challenges facing its member countries",
+      "evidence": "การรวมกลุ่มอาเซียน",
+      "source_url": "https://thaimooc.ac.th/courses/EAU00184"
+    },
+    {
+      "case_id": "HU00189-direct_title",
+      "target_id": "HU00189",
+      "category": "สังคมและการเมืองการปกครอง",
+      "kind": "direct_title",
+      "query": "อยากเรียน กฎหมายอาญา:ภาคทั่วไป",
+      "evidence": "การกระทำโดยเจตนา",
+      "source_url": "https://thaimooc.ac.th/courses/HU00189"
+    },
+    {
+      "case_id": "HU00189-thai_goal",
+      "target_id": "HU00189",
+      "category": "สังคมและการเมืองการปกครอง",
+      "kind": "thai_goal",
+      "query": "อยากเข้าใจความรับผิดทางอาญา เจตนา ประมาท และเหตุลดหย่อนโทษ",
+      "evidence": "การกระทำโดยเจตนา",
+      "source_url": "https://thaimooc.ac.th/courses/HU00189"
+    },
+    {
+      "case_id": "HU00189-english_goal",
+      "target_id": "HU00189",
+      "category": "สังคมและการเมืองการปกครอง",
+      "kind": "english_goal",
+      "query": "I want to study criminal liability, intent, negligence and grounds for reducing punishment",
+      "evidence": "การกระทำโดยเจตนา",
+      "source_url": "https://thaimooc.ac.th/courses/HU00189"
+    },
+    {
+      "case_id": "SRU00898-direct_title",
+      "target_id": "SRU00898",
+      "category": "สุขภาพและการแพทย์",
+      "kind": "direct_title",
+      "query": "อยากเรียน การดูแลพื้นฐานสำหรับผู้ป่วยติดเตียง",
+      "evidence": "การให้อาหารทางสายยาง",
+      "source_url": "https://thaimooc.ac.th/courses/SRU00898"
+    },
+    {
+      "case_id": "SRU00898-thai_goal",
+      "target_id": "SRU00898",
+      "category": "สุขภาพและการแพทย์",
+      "kind": "thai_goal",
+      "query": "อยากหาหลักสูตรดูแลผู้ป่วยที่ลุกจากเตียงไม่ได้ รวมถึงอาหารทางสายยางและการดูแลแผล",
+      "evidence": "การให้อาหารทางสายยาง",
+      "source_url": "https://thaimooc.ac.th/courses/SRU00898"
+    },
+    {
+      "case_id": "SRU00898-english_goal",
+      "target_id": "SRU00898",
+      "category": "สุขภาพและการแพทย์",
+      "kind": "english_goal",
+      "query": "I want a course on caring for bedridden patients including tube feeding and wound care",
+      "evidence": "การให้อาหารทางสายยาง",
+      "source_url": "https://thaimooc.ac.th/courses/SRU00898"
+    },
+    {
+      "case_id": "DDC00170-direct_title",
+      "target_id": "DDC00170",
+      "category": "สุขภาพและการแพทย์",
+      "kind": "direct_title",
+      "query": "อยากเรียน แนวทางเวชปฏิบัติโรคพิษสุนัขบ้า",
+      "evidence": "การฉีดวัคซีนป้องกันโรคพิษสุนัขบ้า",
+      "source_url": "https://thaimooc.ac.th/courses/DDC00170"
+    },
+    {
+      "case_id": "DDC00170-thai_goal",
+      "target_id": "DDC00170",
+      "category": "สุขภาพและการแพทย์",
+      "kind": "thai_goal",
+      "query": "อยากเรียนแนวทางสำหรับบุคลากรดูแลผู้สัมผัสโรคพิษสุนัขบ้าและการให้วัคซีน",
+      "evidence": "การฉีดวัคซีนป้องกันโรคพิษสุนัขบ้า",
+      "source_url": "https://thaimooc.ac.th/courses/DDC00170"
+    },
+    {
+      "case_id": "DDC00170-english_goal",
+      "target_id": "DDC00170",
+      "category": "สุขภาพและการแพทย์",
+      "kind": "english_goal",
+      "query": "I want a course for healthcare staff about rabies exposure management and vaccination",
+      "evidence": "การฉีดวัคซีนป้องกันโรคพิษสุนัขบ้า",
+      "source_url": "https://thaimooc.ac.th/courses/DDC00170"
+    },
+    {
+      "case_id": "ICCS00957-direct_title",
+      "target_id": "ICCS00957",
+      "category": "อาหารและโภชนาการ",
+      "kind": "direct_title",
+      "query": "อยากเรียน ขนมไทย",
+      "evidence": "ขนมช่อม่วง",
+      "source_url": "https://thaimooc.ac.th/courses/ICCS00957"
+    },
+    {
+      "case_id": "ICCS00957-thai_goal",
+      "target_id": "ICCS00957",
+      "category": "อาหารและโภชนาการ",
+      "kind": "thai_goal",
+      "query": "อยากฝึกทำวุ้นแฟนซี ช่อม่วง และคิดต้นทุนตั้งราคาขายขนม",
+      "evidence": "ขนมช่อม่วง",
+      "source_url": "https://thaimooc.ac.th/courses/ICCS00957"
+    },
+    {
+      "case_id": "ICCS00957-english_goal",
+      "target_id": "ICCS00957",
+      "category": "อาหารและโภชนาการ",
+      "kind": "english_goal",
+      "query": "I want to make Thai sweets such as fancy jelly and chor muang and calculate selling prices",
+      "evidence": "ขนมช่อม่วง",
+      "source_url": "https://thaimooc.ac.th/courses/ICCS00957"
+    },
+    {
+      "case_id": "SRU00813-direct_title",
+      "target_id": "SRU00813",
+      "category": "อาหารและโภชนาการ",
+      "kind": "direct_title",
+      "query": "อยากเรียน การแปรรูปผลิตภัณฑ์โกโก้และช็อกโกแลตสู่ความยั่งยืนของท้องถิ่น",
+      "evidence": "บรรจุภัณฑ์และการเก็บรักษา",
+      "source_url": "https://thaimooc.ac.th/courses/SRU00813"
+    },
+    {
+      "case_id": "SRU00813-thai_goal",
+      "target_id": "SRU00813",
+      "category": "อาหารและโภชนาการ",
+      "kind": "thai_goal",
+      "query": "อยากแปรรูปโกโก้เป็นช็อกโกแลตและเรียนเรื่องคุณภาพบรรจุภัณฑ์กับการเก็บรักษา",
+      "evidence": "บรรจุภัณฑ์และการเก็บรักษา",
+      "source_url": "https://thaimooc.ac.th/courses/SRU00813"
+    },
+    {
+      "case_id": "SRU00813-english_goal",
+      "target_id": "SRU00813",
+      "category": "อาหารและโภชนาการ",
+      "kind": "english_goal",
+      "query": "I want to process cocoa into chocolate and learn quality control, packaging and storage",
+      "evidence": "บรรจุภัณฑ์และการเก็บรักษา",
+      "source_url": "https://thaimooc.ac.th/courses/SRU00813"
+    },
+    {
+      "case_id": "CMU00069-direct_title",
+      "target_id": "CMU00069",
+      "category": "เกษตรและสิ่งแวดล้อม",
+      "kind": "direct_title",
+      "query": "อยากเรียน กล้วยไม้วิทยา",
+      "evidence": "การผสมพันธุ์",
+      "source_url": "https://thaimooc.ac.th/courses/CMU00069"
+    },
+    {
+      "case_id": "CMU00069-thai_goal",
+      "target_id": "CMU00069",
+      "category": "เกษตรและสิ่งแวดล้อม",
+      "kind": "thai_goal",
+      "query": "อยากปลูกเลี้ยงผสมพันธุ์กล้วยไม้และรู้ปัจจัยที่ทำให้เจริญเติบโต",
+      "evidence": "การผสมพันธุ์",
+      "source_url": "https://thaimooc.ac.th/courses/CMU00069"
+    },
+    {
+      "case_id": "CMU00069-english_goal",
+      "target_id": "CMU00069",
+      "category": "เกษตรและสิ่งแวดล้อม",
+      "kind": "english_goal",
+      "query": "I want to cultivate and breed orchids and understand their growing conditions",
+      "evidence": "การผสมพันธุ์",
+      "source_url": "https://thaimooc.ac.th/courses/CMU00069"
+    },
+    {
+      "case_id": "DEPA00178-direct_title",
+      "target_id": "DEPA00178",
+      "category": "เกษตรและสิ่งแวดล้อม",
+      "kind": "direct_title",
+      "query": "อยากเรียน IoT ระบบน้ำอัจฉริยะสำหรับภาคการเกษตร",
+      "evidence": "การให้น้ำอัตโนมัติ",
+      "source_url": "https://thaimooc.ac.th/courses/DEPA00178"
+    },
+    {
+      "case_id": "DEPA00178-thai_goal",
+      "target_id": "DEPA00178",
+      "category": "เกษตรและสิ่งแวดล้อม",
+      "kind": "thai_goal",
+      "query": "อยากใช้เซ็นเซอร์ควบคุมการให้น้ำแปลงเกษตรอัตโนมัติผ่านโทรศัพท์",
+      "evidence": "การให้น้ำอัตโนมัติ",
+      "source_url": "https://thaimooc.ac.th/courses/DEPA00178"
+    },
+    {
+      "case_id": "DEPA00178-english_goal",
+      "target_id": "DEPA00178",
+      "category": "เกษตรและสิ่งแวดล้อม",
+      "kind": "english_goal",
+      "query": "I want to use sensors and a phone to control automatic crop irrigation",
+      "evidence": "การให้น้ำอัตโนมัติ",
+      "source_url": "https://thaimooc.ac.th/courses/DEPA00178"
+    }
+  ]
+}

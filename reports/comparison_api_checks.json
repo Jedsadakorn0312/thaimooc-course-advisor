@@ -1,0 +1,9 @@
+{
+  "semantic_ready": true,
+  "corpus_count": 120,
+  "shared_fingerprint": "99b0231a0b4b20132cd962cc929711f7a36cff9a85b5d11df29b00b363560c33",
+  "fixed_top_k_both": 5,
+  "duration_filter_both": "passed",
+  "web_routes": "passed",
+  "openapi": "passed"
+}

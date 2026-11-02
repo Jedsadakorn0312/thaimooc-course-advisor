@@ -1,0 +1,558 @@
+{
+  "evaluation_type": "AI self-judged source-relevance pilot, not human validation",
+  "queries": 12,
+  "unique_query_course_pairs": 99,
+  "corpus_count": 120,
+  "corpus_fingerprint": "99b0231a0b4b20132cd962cc929711f7a36cff9a85b5d11df29b00b363560c33",
+  "judge": {
+    "judge": "Codex assistant in this conversation (LLM self-assessment)",
+    "not_used": [
+      "Qwen3",
+      "external LLM API",
+      "human reviewer"
+    ],
+    "presentation": "candidate order shuffled with seed 20261102; method/rank/similarity/known_target omitted from scoring packets",
+    "independence": "Not independent or strictly blind: the same assistant authored earlier queries and saw previous experiment summaries.",
+    "source_view_limit": "Most judgments used beginning excerpts (330 description characters, 160 outcome characters), with full-source expansion of selected ambiguous candidates and prior available source context. Omitted later content can affect grades.",
+    "rubric": {
+      "2": "explicit primary learning goal supported",
+      "1": "useful prerequisite or concrete partial subgoal supported",
+      "0": "no concrete support for the requested learning goal in the examined source"
+    },
+    "scope": "Pilot: 12 Thai-goal queries, one per category from the prior development set; pooled Top 5 from each method; 99 unique query-course pairs / 120 ranking positions.",
+    "status": "AI draft judgments; not human-verified gold; positive quotes checked as literal source substrings"
+  },
+  "metric_limit": "nDCG ideal is the judged pooled union of Top 5, not all 120 courses; precision counts only grade 2 as strict relevance.",
+  "summary": {
+    "tfidf": {
+      "precision_at_5_strict": 0.2,
+      "precision_at_5_including_partial": 0.25,
+      "pooled_ndcg_at_5": 0.9374822154228188,
+      "top_1_strict": 1,
+      "positions": 60,
+      "grade_counts": {
+        "0": 45,
+        "1": 3,
+        "2": 12
+      }
+    },
+    "semantic": {
+      "precision_at_5_strict": 0.18333333333333335,
+      "precision_at_5_including_partial": 0.2833333333333333,
+      "pooled_ndcg_at_5": 0.9060607352660743,
+      "top_1_strict": 0.9166666666666666,
+      "positions": 60,
+      "grade_counts": {
+        "0": 43,
+        "1": 6,
+        "2": 11
+      }
+    }
+  },
+  "cases": [
+    {
+      "case_id": "PDPC00984-thai_goal",
+      "query": "อยากรู้สิทธิของฉันเมื่อบริษัทเก็บข้อมูลส่วนตัวและวิธีรับมือเมื่อข้อมูลรั่ว",
+      "methods": {
+        "tfidf": {
+          "grades": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.2,
+          "pooled_ndcg_at_5": 1.0,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 1
+          }
+        },
+        "semantic": {
+          "grades": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.2,
+          "pooled_ndcg_at_5": 1.0,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 1
+          }
+        }
+      }
+    },
+    {
+      "case_id": "KMUTT00291-thai_goal",
+      "query": "ไม่เคยเขียนโค้ด อยากเริ่มไพธอนและลองใช้ Pandas จัดข้อมูลกับวาดกราฟ",
+      "methods": {
+        "tfidf": {
+          "grades": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.2,
+          "pooled_ndcg_at_5": 0.8262346571285599,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 1
+          }
+        },
+        "semantic": {
+          "grades": [
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.4,
+          "pooled_ndcg_at_5": 1.0,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 3,
+            "1": 1,
+            "2": 1
+          }
+        }
+      }
+    },
+    {
+      "case_id": "CRRU00120-thai_goal",
+      "query": "อยากปรับแต่งรูปและจัดวางองค์ประกอบภาพดิจิทัลด้วยโปรแกรมแต่งภาพ",
+      "methods": {
+        "tfidf": {
+          "grades": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.2,
+          "pooled_ndcg_at_5": 1.0,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 1
+          }
+        },
+        "semantic": {
+          "grades": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.2,
+          "pooled_ndcg_at_5": 1.0,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 1
+          }
+        }
+      }
+    },
+    {
+      "case_id": "BUU00061-thai_goal",
+      "query": "อยากมองปัญหาในองค์กรให้เห็นความเชื่อมโยงของหลายส่วนก่อนลงมือแก้",
+      "methods": {
+        "tfidf": {
+          "grades": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.2,
+          "pooled_ndcg_at_5": 0.8262346571285599,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 1
+          }
+        },
+        "semantic": {
+          "grades": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "precision_at_5_strict": 0.0,
+          "precision_at_5_including_partial": 0.2,
+          "pooled_ndcg_at_5": 0.11861329943102608,
+          "top_1_strict": 0,
+          "grade_counts": {
+            "0": 4,
+            "1": 1,
+            "2": 0
+          }
+        }
+      }
+    },
+    {
+      "case_id": "NU00420-thai_goal",
+      "query": "อยากวางแผนเงินของตัวเองด้วย Excel และทำความเข้าใจการลงทุนเน้นคุณค่า",
+      "methods": {
+        "tfidf": {
+          "grades": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.2,
+          "pooled_ndcg_at_5": 1.0,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 1
+          }
+        },
+        "semantic": {
+          "grades": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.2,
+          "pooled_ndcg_at_5": 1.0,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 1
+          }
+        }
+      }
+    },
+    {
+      "case_id": "NOU00376-thai_goal",
+      "query": "อยากพูดภาษาจีนใช้ในชีวิตประจำวันเวลาไปไต้หวัน เช่น ร้านอาหารและถามทาง",
+      "methods": {
+        "tfidf": {
+          "grades": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.2,
+          "pooled_ndcg_at_5": 1.0,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 1
+          }
+        },
+        "semantic": {
+          "grades": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.2,
+          "pooled_ndcg_at_5": 1.0,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 1
+          }
+        }
+      }
+    },
+    {
+      "case_id": "ICCS00894-thai_goal",
+      "query": "อยากตรวจสภาพแบตเตอรี่เก่า วัดน้ำกรดและเรียนการใช้เครื่องฟื้นฟู",
+      "methods": {
+        "tfidf": {
+          "grades": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.2,
+          "pooled_ndcg_at_5": 0.8262346571285599,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 1
+          }
+        },
+        "semantic": {
+          "grades": [
+            2,
+            0,
+            1,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.4,
+          "pooled_ndcg_at_5": 0.9639404333166532,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 3,
+            "1": 1,
+            "2": 1
+          }
+        }
+      }
+    },
+    {
+      "case_id": "ICCS00904-thai_goal",
+      "query": "อยากเรียนวิธีเขียนลายและปักสไบมอญแบบสมุทรสาคร",
+      "methods": {
+        "tfidf": {
+          "grades": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.2,
+          "pooled_ndcg_at_5": 1.0,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 1
+          }
+        },
+        "semantic": {
+          "grades": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.2,
+          "pooled_ndcg_at_5": 1.0,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 1
+          }
+        }
+      }
+    },
+    {
+      "case_id": "EAU00184-thai_goal",
+      "query": "อยากเข้าใจการรวมกลุ่มของประเทศอาเซียนและความท้าทายของประชาคม",
+      "methods": {
+        "tfidf": {
+          "grades": [
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.4,
+          "pooled_ndcg_at_5": 1.0,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 3,
+            "1": 1,
+            "2": 1
+          }
+        },
+        "semantic": {
+          "grades": [
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.4,
+          "pooled_ndcg_at_5": 1.0,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 3,
+            "1": 1,
+            "2": 1
+          }
+        }
+      }
+    },
+    {
+      "case_id": "SRU00898-thai_goal",
+      "query": "อยากหาหลักสูตรดูแลผู้ป่วยที่ลุกจากเตียงไม่ได้ รวมถึงอาหารทางสายยางและการดูแลแผล",
+      "methods": {
+        "tfidf": {
+          "grades": [
+            2,
+            0,
+            0,
+            1,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.4,
+          "pooled_ndcg_at_5": 0.944847956559586,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 3,
+            "1": 1,
+            "2": 1
+          }
+        },
+        "semantic": {
+          "grades": [
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.4,
+          "pooled_ndcg_at_5": 1.0,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 3,
+            "1": 1,
+            "2": 1
+          }
+        }
+      }
+    },
+    {
+      "case_id": "ICCS00957-thai_goal",
+      "query": "อยากฝึกทำวุ้นแฟนซี ช่อม่วง และคิดต้นทุนตั้งราคาขายขนม",
+      "methods": {
+        "tfidf": {
+          "grades": [
+            2,
+            1,
+            0,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.4,
+          "pooled_ndcg_at_5": 1.0,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 3,
+            "1": 1,
+            "2": 1
+          }
+        },
+        "semantic": {
+          "grades": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.2,
+          "pooled_ndcg_at_5": 0.8262346571285599,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 1
+          }
+        }
+      }
+    },
+    {
+      "case_id": "CMU00069-thai_goal",
+      "query": "อยากปลูกเลี้ยงผสมพันธุ์กล้วยไม้และรู้ปัจจัยที่ทำให้เจริญเติบโต",
+      "methods": {
+        "tfidf": {
+          "grades": [
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.2,
+          "pooled_ndcg_at_5": 0.8262346571285599,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 4,
+            "1": 0,
+            "2": 1
+          }
+        },
+        "semantic": {
+          "grades": [
+            2,
+            0,
+            1,
+            0,
+            0
+          ],
+          "precision_at_5_strict": 0.2,
+          "precision_at_5_including_partial": 0.4,
+          "pooled_ndcg_at_5": 0.9639404333166532,
+          "top_1_strict": 1,
+          "grade_counts": {
+            "0": 3,
+            "1": 1,
+            "2": 1
+          }
+        }
+      }
+    }
+  ]
+}

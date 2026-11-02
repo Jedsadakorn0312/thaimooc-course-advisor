@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#184f46">
+  <meta name="description" content="ค้นหารายวิชา Thai MOOC ตามเป้าหมายการเรียนรู้ พร้อมกรองระดับและเวลาที่เหมาะกับคุณ">
+  <title>MOOC Compass — เริ่มเรียนจากเป้าหมายของคุณ</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#goal">ข้ามไปค้นหารายวิชา</a>
+<header class="header wrap">
+  <a class="brand" href="/" aria-label="MOOC Compass หน้าหลัก"><span class="brand-mark" aria-hidden="true">↗</span><span>MOOC<span class="brand-light"> Compass</span></span></a>
+  <div class="header-right"><span class="prototype">COURSE FINDER</span><a href="/research">ผลการทดลอง ↗</a><a href="#how">วิธีใช้งาน <span aria-hidden="true">↗</span></a></div>
+</header>
+<main>
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow"><span></span> A LITTLE DIRECTION. A NEW BEGINNING.</p>
+      <h1 id="hero-title">อยากไปทางไหน<br>เริ่มเรียน<span class="serif-accent">ทางนั้น</span><span class="orange-dot">.</span></h1>
+      <p class="hero-description">เล่าเป้าหมายของคุณ แล้วค้นหารายวิชาจาก Thai MOOC<br class="desktop-break">ที่เกี่ยวข้องกับสิ่งที่อยากเรียน ในเวลาที่คุณมี</p>
+      <div class="hero-footnote"><span class="small-compass" aria-hidden="true">✳</span><p>ไม่ต้องรู้ชื่อวิชาก่อน<br><strong>เริ่มจากสิ่งที่คุณอยากทำได้</strong></p></div>
+    </div>
+    <div class="search-panel">
+      <div class="panel-heading"><span class="step">01 / YOUR NEXT STEP</span><span class="spark" aria-hidden="true">✳</span></div>
+      <form id="search-form">
+        <label class="goal-label" for="goal">คุณอยากเรียนรู้อะไร?</label>
+        <p class="field-help" id="goal-help">บอกเรื่องที่สนใจ หรือทักษะที่อยากพัฒนา</p>
+        <textarea id="goal" name="goal" rows="3" maxlength="2000" required aria-describedby="goal-help" placeholder="เช่น อยากเข้าใจภัยไซเบอร์และวิธีป้องกันข้อมูลส่วนตัว"></textarea>
+        <div class="filters">
+          <div><label for="level">พื้นฐานของคุณ</label><select id="level" name="level"><option value="">ทุกระดับ</option></select></div>
+          <div><label for="hours">เวลาต่อรายวิชา</label><select id="hours" name="hours"><option value="">ไม่จำกัดเวลา</option><option value="3">ไม่เกิน 3 ชั่วโมง</option><option value="5">ไม่เกิน 5 ชั่วโมง</option><option value="10">ไม่เกิน 10 ชั่วโมง</option><option value="20">ไม่เกิน 20 ชั่วโมง</option></select></div>
+        </div>
+        <button id="submit" type="submit"><span id="button-text">ค้นหาวิชาที่เหมาะกับฉัน</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+        <p class="form-note">แนะนำได้สูงสุด 5 วิชา พร้อมลิงก์ให้คุณตรวจรายละเอียดก่อนเรียน</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="discovery wrap" aria-label="ตัวอย่างและขอบเขตข้อมูล">
+    <div class="examples"><span>ยังนึกไม่ออก? ลอง</span><div class="chips"><button type="button" data-query="อยากเข้าใจความปลอดภัยไซเบอร์ ภัยคุกคามและช่องโหว่">ป้องกันภัยไซเบอร์ <span aria-hidden="true">↗</span></button><button type="button" data-query="อยากเรียนเรื่องรสยาสมุนไพรและธาตุเจ้าเรือน">รู้จักสมุนไพร <span aria-hidden="true">↗</span></button><button type="button" data-query="อยากพัฒนาการท่องเที่ยวชุมชนอย่างยั่งยืน">ท่องเที่ยวอย่างยั่งยืน <span aria-hidden="true">↗</span></button></div></div>
+    <div class="catalog-note"><span class="info-icon" aria-hidden="true">i</span><p id="catalog-note">กำลังตรวจสอบข้อมูลรายวิชา…</p></div>
+  </section>
+
+  <section id="results-section" class="results wrap" aria-labelledby="results-heading" hidden>
+    <div class="results-header"><div><p class="eyebrow">02 / EXPLORE YOUR OPTIONS</p><h2 id="results-heading" tabindex="-1">รายวิชาสำหรับก้าวต่อไป</h2><p id="results-description"></p></div><span class="results-count" id="results-count"></span></div>
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+    <div id="cards" class="cards"></div>
+    <div id="empty" class="empty" hidden><span aria-hidden="true">⌕</span><h3>ยังไม่พบวิชาที่ตรงกับเงื่อนไข</h3><p>ลองใช้คำที่เจาะจงขึ้น หรือขยายเวลาต่อรายวิชา<br>ฐานข้อมูลอาจยังไม่มีเนื้อหาที่คุณต้องการ</p><button id="reset-filters" type="button">ล้างตัวกรองแล้วค้นหาอีกครั้ง ↗</button></div>
+    <div id="error" class="error" role="alert" hidden></div>
+  </section>
+
+  <section id="how" class="how wrap" aria-labelledby="how-title">
+    <div class="how-intro"><p class="eyebrow">A CLEARER PATH TO LEARNING</p><h2 id="how-title">จากความสนใจ<br>สู่ก้าวแรกที่ชัดขึ้น</h2></div>
+    <div class="how-step"><span>01</span><h3>เล่าเป้าหมาย</h3><p>บอกสิ่งที่อยากทำได้<br>แล้วเลือกเวลาและระดับที่เหมาะกับคุณ</p></div>
+    <div class="how-step"><span>02</span><h3>สำรวจวิชาที่เกี่ยวข้อง</h3><p>ค้นจากชื่อ เนื้อหา และผลลัพธ์การเรียนรู้<br>ด้วยเงื่อนไขที่คุณเลือก</p></div>
+    <div class="how-step"><span>03</span><h3>เลือกแล้วเริ่มเรียน</h3><p>ดูรายละเอียดและเปิดหน้าวิชาต้นทาง<br>เพื่อเช็กข้อมูลก่อนตัดสินใจ</p></div>
+  </section>
+</main>
+<footer class="footer wrap"><a class="brand footer-brand" href="/"><span class="brand-mark" aria-hidden="true">↗</span>MOOC Compass</a><p>โปรเจกต์ทดลองเพื่อการเรียนรู้ · ไม่ใช่เว็บไซต์ทางการของ Thai MOOC</p><a href="https://thaimooc.ac.th/courses" target="_blank" rel="noopener noreferrer">สำรวจ Thai MOOC <span aria-hidden="true">↗</span></a></footer>
+<template id="course-template">
+  <article class="course-card">
+    <div class="card-top"><span class="category"></span><span class="course-number"></span></div>
+    <h3 class="course-title"></h3><p class="institution"></p>
+    <div class="course-meta"><span class="duration"></span><span class="level"></span></div>
+    <p class="description"></p>
+    <div class="reason-box" hidden><span class="reason-label">ทำไมวิชานี้จึงเกี่ยวข้อง</span><p class="reason"></p></div>
+    <div class="card-bottom"><span class="source">ข้อมูลจาก Thai MOOC</span><a class="course-link" target="_blank" rel="noopener noreferrer">ดูรายละเอียดวิชา <span aria-hidden="true">↗</span></a></div>
+  </article>
+</template>
+</body>
+</html>
